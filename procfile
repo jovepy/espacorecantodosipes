@@ -1,1 +1,1 @@
-web: gunicorn espacorecantodosipes.wsgi
+web: gunicorn project.wsgi
