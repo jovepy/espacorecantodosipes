@@ -31,14 +31,18 @@
             </div>
           </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-patch-question" viewBox="0 0 16 16">
+                  <path d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z"/>
+                  <path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"/>
+                  <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z"/>
+                </svg>
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
                   <img
                     src="../static/img/logo.png" class="rounded float-center" width="150px">
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 20 20">
                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                   </svg></button>
                 </div>
@@ -51,15 +55,83 @@
                     </div>
                   </div>
                   <ul ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Início</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Reserve</a>
-                    </li>
+                    <div class="row">
+                      <div class="col">
+                        <div class="tab-content text-center-sm"
+                        id="nav-tabContent">
+                          <div class="tab-pane fade show active"
+                          id="list-home" role="tabpanel"
+                          aria-labelledby="list-home-list">O espaço comporta até
+                          200 pessoas.</div>
+                          <div class="tab-pane fade" id="list-profile"
+                          role="tabpanel"
+                          aria-labelledby="list-profile-list">inserir descricao espaço</div>
+                          <div class="tab-pane fade" id="list-messages"
+                          role="tabpanel"
+                          aria-labelledby="list-messages-list">Pets são aceitos,
+                          mas não podem cavar na grama e as sujeiras devem ser
+                          recolhidas no final do evento.</div>
+                          <div class="tab-pane fade" id="list-settings"
+                          role="tabpanel"
+                          aria-labelledby="list-settings-list">Somente pelo
+                          Whatsapp. Para ser encaminhado, basta clicar no botão
+                          do Whatsapp ou no botão abaixo.<br>
+                          <a
+                          href="https://api.whatsapp.com/send?phone=+5567996161512&text=Olá,
+                          gostaria de reservar um dia no
+                          espaço Recanto dos Ipês?"
+                          class="btn
+                          btn-outline-primary mt-2"
+                          style="opacity:80%">Envie-nos
+                              uma mensagem</a>  
+                        </div>
+                          <div class="tab-pane fade" id="list-settings2"
+                          role="tabpanel"
+                          aria-labelledby="list-settings-list2">O pagamento
+                          é realizado através de duas parcelas. A primeira no
+                          momento da assinatura do contrato e a segunda após o
+                          recebimento das chaves.</div>
+                        </div>
+                      </div>
+                      <div class="row"><br/></div>
+                        <div class="col-8-lg" style="opacity:80%">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item
+                            list-group-item-action active"
+                            id="list-home-list"
+                            data-bs-toggle="list"
+                            href="#list-home" role="tab"
+                            aria-controls="list-home">Quantas
+                            pessoas o local comporta?</a>
+                            <a class="list-group-item
+                            list-group-item-action"
+                            id="list-profile-list"
+                            data-bs-toggle="list"
+                            href="#list-profile" role="tab"
+                            aria-controls="list-profile">O que o espaço possui?</a>
+                            <a class="list-group-item
+                            list-group-item-action"
+                            id="list-messages-list"
+                            data-bs-toggle="list"
+                            href="#list-messages" role="tab"
+                            aria-controls="list-messages">Aceitam
+                            PETs?</a>
+                            <a class="list-group-item
+                            list-group-item-action"
+                            id="list-settings-list"
+                            data-bs-toggle="list"
+                            href="#list-settings" role="tab"
+                            aria-controls="list-settings">Como
+                            faço para reservar o local?</a>
+                            <a class="list-group-item
+                            list-group-item-action"
+                            id="list-settings-list2"
+                            data-bs-toggle="list"
+                            href="#list-settings2" role="tab"
+                            aria-controls="list-settings2">Quais
+                            são as formas de pagamento?</a>
+                          </div>
+                        </div>
                   </ul>
                 </div>
                 </div>
@@ -69,7 +141,7 @@
           {% block content %}
         
             {% endblock content %}
-            <div class="grid text-center mt-3" style="--bs-columns: 3;">
+            <div class="grid text-center mt-2" style="--bs-columns: 3;">
                 <div>
                   <div class="grid col-auto">
                     <div class="grid text-center" style="--bs-columns: 3;">
@@ -80,88 +152,15 @@
                           <div class="row-sm text-center float-sm">
                               <div class="row-auto text-center float-sm-auto">
                                 <div class="d-grid"> 
-                                <a href="#" class="btn btn-outline-primary" style="opacity:80%">Envie-nos
+                                <a
+                                href="https://api.whatsapp.com/send?phone=+5567996161512&text=Olá,
+                                gostaria de reservar um dia no espaço Recanto
+                                dos Ipês?" class="btn btn-outline-primary"
+                                style="opacity:80%">f-nos
                                 uma mensagem</a>
 
-                                <br/>  
-                                <button class="btn btn-outline-primary" style='opacity:80%' type="button"
-                                data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasWithBothOptions"
-                                aria-controls="offcanvasWithBothOptions"
-                                >Perguntas Frequentes</button>
-
-                                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title"
-                                    id="offcanvasWithBothOptionsLabel">Perguntas
-                                    Frequentes</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                                      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                    </svg></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <div class="row">
-                                      <div class="col">
-                                        <div class="tab-content text-center-sm"
-                                        id="nav-tabContent">
-                                          <div class="tab-pane fade show active"
-                                          id="list-home" role="tabpanel"
-                                          aria-labelledby="list-home-list">n.º
-                                            de pessoas</div>
-                                          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">infraestrutura</div>
-                                          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">pets</div>
-                                          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">reserva</div>
-                                          <div class="tab-pane fade" id="list-settings2" role="tabpanel" aria-labelledby="list-settings-list2">pagamento</div>
-                                        </div>
-                                      </div>
-                                      <div class="row"><br/></div>
-                                        <div class="col-8-lg" style="opacity:80%">
-                                          <div class="list-group" id="list-tab" role="tablist">
-                                            <a class="list-group-item
-                                            list-group-item-action active"
-                                            id="list-home-list"
-                                            data-bs-toggle="list"
-                                            href="#list-home" role="tab"
-                                            aria-controls="list-home">Quantas
-                                            pessoas o local comporta?</a>
-                                            <a class="list-group-item
-                                            list-group-item-action"
-                                            id="list-profile-list"
-                                            data-bs-toggle="list"
-                                            href="#list-profile" role="tab"
-                                            aria-controls="list-profile">Como é
-                                            a infraestrutura do local?</a>
-                                            <a class="list-group-item
-                                            list-group-item-action"
-                                            id="list-messages-list"
-                                            data-bs-toggle="list"
-                                            href="#list-messages" role="tab"
-                                            aria-controls="list-messages">Aceitam
-                                            PETs?</a>
-                                            <a class="list-group-item
-                                            list-group-item-action"
-                                            id="list-settings-list"
-                                            data-bs-toggle="list"
-                                            href="#list-settings" role="tab"
-                                            aria-controls="list-settings">Como
-                                            faço para reservar o local?</a>
-                                            <a class="list-group-item
-                                            list-group-item-action"
-                                            id="list-settings-list2"
-                                            data-bs-toggle="list"
-                                            href="#list-settings2" role="tab"
-                                            aria-controls="list-settings2">Quais
-                                            são as formas de pagamento?</a>
-                                          </div>
-                                        </div>                                        
-                                      </div>
-                                </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                              <br/>
-                                  <small class='text-muted'>Criado por Jove.py</small>
+                                
+                                  <small class='text-muted mt-3'>Criado por Jove.py</small>
                                   </div> 
                               
                           
